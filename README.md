@@ -11,8 +11,8 @@ This lab explores using PHPUnit for Behavior Driven Development (BDD) testing.
 ## Setup/Installation Requirements
 * Clone project
 * Run `composer install --prefer-source --no-interaction` from project root
-* (See https://getcomposer.org for details on installing _composer_)
 * (See https://secure.php.net/ for details on installing _PHP_)
+* (See https://getcomposer.org for details on installing _composer_)
 * In project folder run $ `vendor/bin/phpunit tests`
 
 ## Known Bugs
@@ -37,9 +37,9 @@ This lab explores using PHPUnit for Behavior Driven Development (BDD) testing.
 
 | Behavior - Is this year a leap Year?              | Input    | Output |
 |---------------------------------------------------|----------|--------|
-| Some odd year                                     | 1993     | No     |
-| A year divisible by 4                             | 2004     | Yes    |
-| A year divisible by 100                           | 1900     | No     |
-| A year divisible by 400                           | 2000     | Yes    |
+| A year                                            | 1993     | false  |
+| A year divisible by 4                             | 2004     | true   |
+| A year divisible by 100                           | 1900     | false  |
+| A year divisible by 400                           | 2000     | true   |
 
 * End specifications
