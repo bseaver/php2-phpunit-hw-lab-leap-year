@@ -3,7 +3,12 @@
     {
         function isleapYear($input_year)
         {
-            return $input_year % 4 == 0;
+            $result = $input_year % 4 == 0;
+
+            if ($result) {
+                $result = $input_year % 100 != 0;
+            }
+            return $result;
         }
     }
 ?>
