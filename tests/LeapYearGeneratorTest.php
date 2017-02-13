@@ -29,5 +29,18 @@
             $this->assertEquals(true, $result);
         }
 
+        function test_isLeapYear_div100()
+        {
+            // Arrange
+            $test_LeapYearGenerator = new LeapYearGenerator;
+            $input = 1900;
+
+            // Act
+            $result = $test_LeapYearGenerator->isLeapYear($input);
+
+            // Assert
+            $this->assertEquals(false, $result);
+        }
+
     }
 ?>
