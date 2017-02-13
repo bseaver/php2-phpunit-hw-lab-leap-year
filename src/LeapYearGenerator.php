@@ -7,6 +7,9 @@
 
             if ($result) {
                 $result = $input_year % 100 != 0;
+                if (!$result) {
+                    $result = $input_year % 400 == 0;
+                }
             }
             return $result;
         }
